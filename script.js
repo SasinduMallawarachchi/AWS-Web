@@ -4,9 +4,9 @@ function saveWebPage() {
   
     // Set up the parameters for the PutObject operation
     const params = {
-      Bucket: 'your-bucket-name',
+      Bucket: 'web-s-3', // your-bucket-name
       Key: 'webpage.html',
-      Body: document.documentElement.outerHTML,
+      Body: document.documentElement.outerHTML, //load the all content in html page
       ContentType: 'text/html'
     };
   
